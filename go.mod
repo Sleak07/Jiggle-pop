@@ -1,3 +1,3 @@
-module github.com/Sleak07/Jiggle-pop
+module github.com/Sleak07/Jiggle-pop.git
 
-go 1.24.9
+go 1.25.7
