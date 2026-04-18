@@ -1,22 +1,15 @@
-// packages in go
+// TODO: Take user input and count the number of words and find the longest word
 package main
 
-import (
+import(
 	"fmt"
-	"math"
-	"math/rand"
+	"bufio"
+	"os"
+	"strings"
 )
 
 func main() {
-	fmt.Println("Hello world")
-	fmt.Println("My favorite number is ", rand.Intn(12))
+	fmt.Print("Enter a word of your Choice: ")
 
-	// exported names have a capital letter
-	fmt.Println(math.Pi)
-	fmt.Println(add(23, 56))
-}
 
-// functions in go
-func add(x int, y int) int {
-	return x + y
 }
