@@ -10,14 +10,22 @@ func main() {
 // language represents language's code
 type language string
 
-// greet returns greeting to world
+// phrasebook holds each greeting
+var phrasebook = map[language]string{
+	"el": "Χαίρετε Κόσμε",
+	// Greek
+	"en": "Hello world",
+	// English
+	"fr": "Bonjour le monde", // French
+	"ur": "‫دﻧﯿﺎ‬ ‫ﯿﻠﻮ‬ ",
+	// Urdu
+	"vi": "Xin chào Thế Giới", // Vietnamese
+}
+
 func greet(l language) string {
-	switch l {
-	case "en":
-		return "Hello World"
-	case "fr":
-		return "Bonjour le monde"
-	default:
-		return ""
+	greeting, ok := phrasebook[l]
+	if !ok {
+		return fmt.Sprintf("unsupported language: %q", l)
 	}
+	return greeting
 }
