@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	greeting := greet("fr")
+	greeting := greet("el")
 	fmt.Println(greeting)
 }
 
@@ -16,9 +16,7 @@ var phrasebook = map[language]string{
 	// Greek
 	"en": "Hello world",
 	// English
-	"fr": "Bonjour le monde", // French
-	"ur": "‫دﻧﯿﺎ‬ ‫ﯿﻠﻮ‬ ",
-	// Urdu
+	"fr": "Bonjour le monde",  // French
 	"vi": "Xin chào Thế Giới", // Vietnamese
 }
 
